@@ -4,6 +4,8 @@ const app = express()
 const cors = require('cors')
 const axios = require('axios')
 const dotenv = require('dotenv')
+const cors = require('cors')
+app.use(cors())
 dotenv.config();
 
 const port = process.env.PORT || 5000;
