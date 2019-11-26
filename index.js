@@ -12,6 +12,9 @@ const port = process.env.PORT || 5000;
 app.use(express.json())
 app.use(cors())
 
+app.get('/', (req, res) =>
+    res.send("Api running"))
+
 const key = process.env.APIKEY
 app.get('/api', async (req, res) => {
     try {
